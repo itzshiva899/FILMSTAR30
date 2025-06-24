@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Admin - FILMSTAR30</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore-compat.js"></script>
+</head>
+<body>
+  <h2>Admin Login</h2>
+  <div id="loginForm">
+    <input type="email" id="email" placeholder="Email"><br>
+    <input type="password" id="password" placeholder="Password"><br>
+    <button onclick="login()">Login</button>
+  </div>
+
+  <div id="uploadSection" style="display:none;">
+    <h2>Upload New Movie</h2>
+    <input type="text" id="movieTitle" placeholder="Movie Title"><br>
+    <input type="text" id="movieDesc" placeholder="Description"><br>
+    <input type="text" id="trailerLink" placeholder="YouTube Trailer Link"><br>
+    <button onclick="uploadMovie()">Upload</button>
+  </div>
+
+  <script src="js/firebase-config.js"></script>
+  <script src="js/admin.js"></script>
+</body>
+</html>
